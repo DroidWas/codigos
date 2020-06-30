@@ -1,0 +1,21 @@
+const Discord = require("discord.js");
+
+
+module.exports.run = async (bot, message, args) => {
+  let botembed = new Discord.MessageEmbed()
+  .setTitle("  **<a:Checado:716968978626642010> Informações do bot**")
+  .setDescription("⠀")
+  .setColor("RANDOM")
+  .addField("<a:Tick:714477040312647700> ❤️ Meu criador"," ▸ <@!613726577758306306>") //exemplo: <@!613726577758306306>
+  .addField("<a:Tick:714477040312647700> 📅 Dia que o bot foi criado", " ▸ 06/01/2020")
+  .addField("<a:Tick:714477040312647700> 🛠️ Linguagem"," ▸ discord.js ")
+  .addField("<a:Tick:714477040312647700> 🌎 Idioma"," ▸ pt-br ")
+  .addField("<a:Tick:714477040312647700> 🗜️ Meu prefixo"," ▸ h!")
+  
+    message.channel.send(botembed);
+}
+
+module.exports.info = {
+  name: "botinfo",
+  aliases: ["infobot"]
+  }
